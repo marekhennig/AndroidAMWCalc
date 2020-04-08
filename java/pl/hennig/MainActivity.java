@@ -2,6 +2,7 @@ package pl.hennig;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
@@ -13,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = getIntent();
+        String helloMsg = intent.getStringExtra(HomeScreenCalc.USER_NAME);
+        TextView helloMsgView = (TextView)findViewById(R.id.name);
+        helloMsgView.setText(helloMsg);
     }
     public void add(View view)
     {
@@ -58,4 +63,5 @@ public class MainActivity extends AppCompatActivity {
         x = a / b;
         result.setText(String.valueOf(x));
     }
+
 }
