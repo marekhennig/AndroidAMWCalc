@@ -4,6 +4,12 @@
     <string name="add">Dodawanie</string>
     <string name="multi">Mnożenie</string>
     <string name="division">Dzielenie</string>
+    <string name="simple_calc">Proste Obliczenia</string>
+    <string name="stranger">Nieznajomy</string>
+    <string name="asker">Co chciałbyś dzisiaj zrobić?</string>
+    <string name="delta">Oblicz Delte</string>
+    <string name="quadratic_equation">ax * x + b * x + c = 0</string>
+    <string name="calculate">Oblicz</string>
     <string-array name="numbers">
         <item>1</item>
         <item>2</item>
@@ -16,5 +22,7 @@
         <item>9</item>
         <item>10</item>
     </string-array>
-    </resources>
+
+
+</resources>
 
