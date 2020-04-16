@@ -23,7 +23,7 @@ public class HomeScreenCalc extends AppCompatActivity {
 
         EditText editText = (EditText)findViewById(R.id.editText);
         String name = String.valueOf(editText.getText());
-        intent.putExtra(USER_NAME, "Witaj " +name);
+        intent.putExtra(USER_NAME, "Cześć " +name);
 
         startActivity(intent);
     }
@@ -33,7 +33,7 @@ public class HomeScreenCalc extends AppCompatActivity {
 
         EditText editText = (EditText)findViewById(R.id.editText);
         String name = String.valueOf(editText.getText());
-        intent.putExtra(USER_NAME, "Witaj " +name);
+        intent.putExtra(USER_NAME, "Cześć " +name);
 
         startActivity(intent);
     }

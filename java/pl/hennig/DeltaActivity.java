@@ -20,6 +20,7 @@ public class DeltaActivity extends AppCompatActivity {
         String helloMsg = intent.getStringExtra(HomeScreenCalc.USER_NAME);
         TextView helloMsgView = (TextView)findViewById(R.id.name);
         helloMsgView.setText(helloMsg);
+
     }
     public void calculateDelta(View view)
     {
@@ -33,7 +34,7 @@ public class DeltaActivity extends AppCompatActivity {
         float c1 = Float.parseFloat(String.valueOf(c.getText()));
         x = (b1*b1) - (4*a1*c1);
         System.out.println(x);
-        if(x<0)result.setText("Delta ujemna, brak rozwiązań");
+        if(x<0)result.setText("Brak rozwiązań, delta ujemna");
         else if(x==0)result.setText("x: " +String.valueOf(-b1/(2*a1)));
         else result.setText("x1: "+String.valueOf((-b1-sqrt(x))/(2*a1))+" x2: " +String.valueOf((-b1+sqrt(x))/(2*a1)));
     }

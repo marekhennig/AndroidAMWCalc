@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         String helloMsg = intent.getStringExtra(HomeScreenCalc.USER_NAME);
         TextView helloMsgView = (TextView)findViewById(R.id.name);
         helloMsgView.setText(helloMsg);
+
     }
     public void add(View view)
     {
@@ -27,8 +28,9 @@ public class MainActivity extends AppCompatActivity {
         float x;
         float a = Float.parseFloat(String.valueOf(num1.getSelectedItem()));
         float b = Float.parseFloat(String.valueOf(num2.getSelectedItem()));
-        x = a + b;
+        x = b + a;
         result.setText(String.valueOf(x));
+
     }
     public void sub(View view)
     {
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         float a = Float.parseFloat(String.valueOf(num1.getSelectedItem()));
         float b = Float.parseFloat(String.valueOf(num2.getSelectedItem()));
         x = a / b;
+
         result.setText(String.valueOf(x));
     }
 

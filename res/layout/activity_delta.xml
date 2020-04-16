@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="27dp"
+        android:layout_width="28dp"
         android:layout_height="23dp"
         android:layout_marginTop="40dp"
         android:text="c:"
@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="27dp"
+        android:layout_width="28dp"
         android:layout_height="23dp"
         android:layout_marginTop="40dp"
         android:text="a:"
